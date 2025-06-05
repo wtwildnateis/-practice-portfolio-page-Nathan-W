@@ -1,0 +1,118 @@
+<!-- Tasks
+
+Step 1: Plan the Portfolio Page
+
+Before coding, students will plan the structure of their portfolio page. The page
+should include:
+
+1. A Header: Contains the name and a brief tagline.
+2. An "About Me" Section: Includes a paragraph about themselves.
+3. A Skills Table: Displays a list of skills or tools with proficiency levels in a table
+format.
+4. A Contact Form: Allows visitors to send a message, including fields for the
+visitor's name, email, and message.
+
+Step 2: Create the HTML Structure
+
+1. Use semantic tags like <header>, <section>, and <footer> to organize the
+page.
+2. Create a table with appropriate headers (<th>), rows (<tr>), and cells (<td>).
+3. Add a form with labels, input fields, and a submit button. The form should
+use:
+○ type="text" for the name field.
+○ type="email" for the email field.
+○ <textarea> for the message field.
+4. Use other relevant tags, such as <h1>, <p>, <ul>, or <img>, to enhance the
+design.
+
+Step 3: Test and Review
+Once the page is complete, you should:
+1. Test the form to ensure all fields are correctly labeled.
+2. Check the table for proper alignment and formatting.
+3. Review the code to ensure proper use of tags and attributes.
+Example Structure
+● Header
+● About Me Section
+● Skills Table
+● Contact Form
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name"viewport" content=""width=device-width, intial-scale-1.0>
+        <title>Nathan's Portfolio</title>
+    </head>
+</html>
+<body>
+    <header>
+        <h1>Hey,<br />
+            I'm Nathan!</h1>
+        <p>Amature Developer and Photographer</p>
+        <hr />
+    </header>
+    <main>
+        <article>
+    <section id = "about-me"> 
+        <h2>About Me</h2>
+        <p>I’m a passionate developer and photographer based in St. Louis, MO, where creativity is my daily fuel. Whether I’m building a sleek webpage, crafting a dynamic app, or capturing a moment through my lens, I’m in my element when I’m creating.
+
+I’m especially drawn to the art of web development and the storytelling power of photography—constantly learning, experimenting, and leveling up my skills.
+
+When I’m not behind a screen or a camera, you’ll probably find me roaming the streets of St. Louis with my goofy dog by my side, soaking up the energy of the city one adventure at a time.
+
+
+    </section>
+    <section id = "skills">
+        <h2>Skills</h2>
+        <table>
+            <thread>
+                <thead>
+                <tr>
+                    <th>Skill</th>
+                    <th>Proficiency</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr><ul>
+                    <td><li>HTML</li></td>
+                    <td>Beginner</td>
+                </tr>
+                <tr>
+                    <td><li>CSS</li></td>
+                    <td>Beginner</td>
+                </tr>
+                <tr>
+                    <td><li>JavaScript</td>
+                    <td>Amature</td>
+                </tr>
+                <tr>
+                    <td><li>Photoshop</li></td>
+                    <td>Expert</td>
+                </tr>
+                <tr>
+                    <td><li>Photography</li></td>
+                    <td>Professional</td>
+                </tr></ul>
+                </tbody>
+            </thread>
+        </table>
+    </section>
+    <section id = "contact">
+        <h2>Contact Me</h2>
+        <form action="/Submit" method="post">
+            <label for ="name">Name:</label>
+            <input type="text" id="name" name="name"><br />
+            <label for ="email">Email:</label>
+            <input type="email" id="email" email="email"><br />
+            <textarea placeholder="Write me a message!" name="message" rows="4" cols="27"></textarea><br />
+            <button type ="Submit">Submit</button>
+        </form>
+    </section>
+    </article>
+    </main>
+    <hr />
+
+    <footer>All rights reserved by N8 Inc.</footer>
+    </body>

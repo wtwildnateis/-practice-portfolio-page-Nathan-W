@@ -39,80 +39,143 @@ Example Structure
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name"viewport" content=""width=device-width, intial-scale-1.0>
-        <title>Nathan's Portfolio</title>
-    </head>
-</html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name"viewport" content="width=device-width, intial-scale-1.0">
+    <title>Nathan's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
 <body>
+
     <header>
-        <h1>Hey,<br />
-            I'm Nathan!</h1>
-        <p>Amature Developer and Photographer</p>
-        <hr />
+        <div class="stacked-elements">
+            <h1>Hello.<br />
+                I'm <span class="gradient-word">Nathan.</span></h1>
+            <p>Photographer and Amature Developer</p>
+        </div>
+        <img class="img_deg" src="img/_mg_0133.jpg" alt="Me in Teton Nation Park. Photographed by: Myself">
+
     </header>
+    <div class="seperator">
+        <hr />
+    </div>
+
     <main>
         <article>
-    <section id = "about-me"> 
-        <h2>About Me</h2>
-        <p>I’m a passionate developer and photographer based in St. Louis, MO, where creativity is my daily fuel. Whether I’m building a sleek webpage, crafting a dynamic app, or capturing a moment through my lens, I’m in my element when I’m creating.
+            <div class="information">
 
-I’m especially drawn to the art of web development and the storytelling power of photography—constantly learning, experimenting, and leveling up my skills.
+                <section id="about-me">
+                    <h2 class="hidden">About Me</h2>
+                    <p>I’m a passionate <span class="bold">developer</span> and <span class="bold">photographer</span>
+                        based in <span class="bold">St. Louis, Missouri</span> where <span
+                            class="bold">creativity</span> is
+                        my daily
+                        fuel. Whether I’m building a sleek webpage, crafting a dynamic app, or capturing a moment
+                        through my lens, I’m in my element when I’m <span class="bold">creating</span>.
 
-When I’m not behind a screen or a camera, you’ll probably find me roaming the streets of St. Louis with my goofy dog by my side, soaking up the energy of the city one adventure at a time.
+                        I’m especially drawn to the art of <span class="bold">web development</span> and the
+                        storytelling power of
+                        <span class="bold">photography</span>—constantly learning, experimenting, and leveling up my
+                        skills.
+
+                        When I’m not behind a screen or a camera, you’ll probably find me roaming the streets of
+                        <span class="bold">St.
+                            Louis</span>
+                        with my goofy dog by my side, soaking up the energy of the city one adventure at a time.
 
 
-    </section>
-    <section id = "skills">
-        <h2>Skills</h2>
-        <table>
-            <thread>
-                <thead>
-                <tr>
-                    <th>Skill</th>
-                    <th>Proficiency</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr><ul>
-                    <td><li>HTML</li></td>
-                    <td>Beginner</td>
-                </tr>
-                <tr>
-                    <td><li>CSS</li></td>
-                    <td>Beginner</td>
-                </tr>
-                <tr>
-                    <td><li>JavaScript</td>
-                    <td>Amature</td>
-                </tr>
-                <tr>
-                    <td><li>Photoshop</li></td>
-                    <td>Expert</td>
-                </tr>
-                <tr>
-                    <td><li>Photography</li></td>
-                    <td>Professional</td>
-                </tr></ul>
-                </tbody>
-            </thread>
-        </table>
-    </section>
-    <section id = "contact">
-        <h2>Contact Me</h2>
-        <form action="/Submit" method="post">
-            <label for ="name">Name:</label>
-            <input type="text" id="name" name="name"><br />
-            <label for ="email">Email:</label>
-            <input type="email" id="email" email="email"><br />
-            <textarea placeholder="Write me a message!" name="message" rows="4" cols="27"></textarea><br />
-            <button type ="Submit">Submit</button>
-        </form>
-    </section>
-    </article>
+                </section>
+
+                <section id="skills">
+                    <h2>My Skills</h2>
+                    <hr />
+                    <table>
+                        <thread>
+                            <thead>
+                                <tr>
+                                    <th>Skill</th>
+                                    <th>Proficiency</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <ul>
+                                        <td>
+                                            <li>HTML</li>
+                                        </td>
+                                        <td>
+                                            <li>Decent</li>
+                                        </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <li>CSS</li>
+                                    </td>
+                                    <td>
+                                        <li>Intermediate</li>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <li>JavaScript</li>
+                                    </td>
+                                    <td>
+                                        <li>Intermediate</li>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <li>Photoshop</li>
+                                    </td>
+                                    <td>
+                                        <li>Expert</li>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <li>Photography</li>
+                                    </td>
+                                    <td>
+                                        <li>Professional</li>
+                                    </td>
+                                </tr>
+                                </ul>
+                            </tbody>
+                        </thread>
+                    </table>
+                </section>
+            </div>
+        </article>
+        <hr />
+        <div class="contact-info">
+            <div class="contactboxleft">
+                <h2>Want to book a shoot or collaborate on a project?</h2>
+                <p>I’d love to hear what you have in mind! Just fill out the form with your details, and let’s make
+                    some
+                    creative magic happen!</p>
+            </div>
+            <div class="contactboxright">
+                <h2>Contact Me</h2>
+                <hr />
+                <section id="contact-form">
+                    <form action="/Submit" method="post">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name.."><br />
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your email address.."><br />
+                        <textarea name="message" rows="4" cols="27" placeholder="Your message.."></textarea><br />
+                        <button type="Submit">Submit</button>
+                    </form>
+                </section>
+            </div>
+        </div>
     </main>
-    <hr />
 
-    <footer>All rights reserved by N8 Inc.</footer>
-    </body>
+    <footer>
+        <p>All rights reserved by N8 Inc.</p>
+    </footer>
+</body>
+
+</html>
